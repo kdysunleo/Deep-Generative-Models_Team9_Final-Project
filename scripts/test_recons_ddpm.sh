@@ -1,0 +1,92 @@
+# python main/eval/ddpm/generate_recons.py +dataset=cifar10/test \
+#                         dataset.ddpm.data.root=\'/nlp_data/kdy/genai/DiffuseVAE/main/datasets/img_cifar10\' \
+#                         dataset.ddpm.data.name='cifar10' \
+#                         dataset.ddpm.data.norm=True \
+#                         dataset.ddpm.data.hflip=False \
+#                         dataset.ddpm.model.attn_resolutions=\'16,\' \
+#                         dataset.ddpm.model.dropout=0.3 \
+#                         dataset.ddpm.model.n_residual=2 \
+#                         dataset.ddpm.model.dim_mults=\'1,2,2,2\' \
+#                         dataset.ddpm.model.n_heads=8 \
+#                         dataset.ddpm.evaluation.guidance_weight=0.0 \
+#                         dataset.ddpm.evaluation.seed=0 \
+#                         dataset.ddpm.evaluation.sample_prefix='gpu_0' \
+#                         dataset.ddpm.evaluation.device=\'gpu:2\' \
+#                         dataset.ddpm.evaluation.save_mode='image' \
+#                         dataset.ddpm.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_kd_cifar2/ddpmv2-cifar2_e2e_kd-epoch=499.ckpt\' \
+#                         dataset.ddpm.evaluation.type='form1' \
+#                         dataset.ddpm.evaluation.resample_strategy='truncated' \
+#                         dataset.ddpm.evaluation.skip_strategy='quad' \
+#                         dataset.ddpm.evaluation.sample_method='ddpm' \
+#                         dataset.ddpm.evaluation.sample_from='target' \
+#                         dataset.ddpm.evaluation.temp=1.0 \
+#                         dataset.ddpm.evaluation.batch_size=64 \
+#                         dataset.ddpm.evaluation.save_path=\'/nlp_data/kdy/genai/DiffuseVAE/image_recons/ddpm_e2e_kd_cifar2_sample_cond/\' \
+#                         dataset.ddpm.evaluation.z_cond=False \
+#                         dataset.ddpm.evaluation.n_samples=1000 \
+#                         dataset.ddpm.evaluation.n_steps=1000 \
+#                         dataset.ddpm.evaluation.save_vae=True \
+#                         dataset.ddpm.evaluation.workers=1 \
+#                         dataset.vae.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_kd_cifar2/vae-epoch=499.ckpt\'
+
+python main/eval/ddpm/generate_recons.py +dataset=cifar10/test \
+                        dataset.ddpm.data.root=\'/nlp_data/kdy/genai/DiffuseVAE/main/datasets/img_cifar10\' \
+                        dataset.ddpm.data.name='cifar10' \
+                        dataset.ddpm.data.norm=True \
+                        dataset.ddpm.data.hflip=False \
+                        dataset.ddpm.model.attn_resolutions=\'16,\' \
+                        dataset.ddpm.model.dropout=0.3 \
+                        dataset.ddpm.model.n_residual=2 \
+                        dataset.ddpm.model.dim_mults=\'1,2,2,2\' \
+                        dataset.ddpm.model.n_heads=8 \
+                        dataset.ddpm.evaluation.guidance_weight=0.0 \
+                        dataset.ddpm.evaluation.seed=0 \
+                        dataset.ddpm.evaluation.sample_prefix='gpu_0' \
+                        dataset.ddpm.evaluation.device=\'gpu:3\' \
+                        dataset.ddpm.evaluation.save_mode='image' \
+                        dataset.ddpm.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_reg_cifar10/ddpm-epoch=499.ckpt\' \
+                        dataset.ddpm.evaluation.type='form1' \
+                        dataset.ddpm.evaluation.resample_strategy='truncated' \
+                        dataset.ddpm.evaluation.skip_strategy='quad' \
+                        dataset.ddpm.evaluation.sample_method='ddpm' \
+                        dataset.ddpm.evaluation.sample_from='target' \
+                        dataset.ddpm.evaluation.temp=1.0 \
+                        dataset.ddpm.evaluation.batch_size=256 \
+                        dataset.ddpm.evaluation.save_path=\'/nlp_data/kdy/genai/DiffuseVAE/image_recons/ddpm_e2e_reg_cifar10/\' \
+                        dataset.ddpm.evaluation.z_cond=False \
+                        dataset.ddpm.evaluation.n_samples=1000 \
+                        dataset.ddpm.evaluation.n_steps=1000 \
+                        dataset.ddpm.evaluation.save_vae=True \
+                        dataset.ddpm.evaluation.workers=8 \
+                        dataset.vae.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_reg_cifar10/vae-epoch=499.ckpt\'
+
+python main/eval/ddpm/generate_recons.py +dataset=cifar10/test \
+                        dataset.ddpm.data.root=\'/nlp_data/kdy/genai/DiffuseVAE/main/datasets/img_cifar10\' \
+                        dataset.ddpm.data.name='cifar10' \
+                        dataset.ddpm.data.norm=True \
+                        dataset.ddpm.data.hflip=False \
+                        dataset.ddpm.model.attn_resolutions=\'16,\' \
+                        dataset.ddpm.model.dropout=0.3 \
+                        dataset.ddpm.model.n_residual=2 \
+                        dataset.ddpm.model.dim_mults=\'1,2,2,2\' \
+                        dataset.ddpm.model.n_heads=8 \
+                        dataset.ddpm.evaluation.guidance_weight=0.0 \
+                        dataset.ddpm.evaluation.seed=0 \
+                        dataset.ddpm.evaluation.sample_prefix='gpu_0' \
+                        dataset.ddpm.evaluation.device=\'gpu:3\' \
+                        dataset.ddpm.evaluation.save_mode='image' \
+                        dataset.ddpm.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_kd_cifar10/ddpm-epoch=499.ckpt\' \
+                        dataset.ddpm.evaluation.type='form1' \
+                        dataset.ddpm.evaluation.resample_strategy='truncated' \
+                        dataset.ddpm.evaluation.skip_strategy='quad' \
+                        dataset.ddpm.evaluation.sample_method='ddpm' \
+                        dataset.ddpm.evaluation.sample_from='target' \
+                        dataset.ddpm.evaluation.temp=1.0 \
+                        dataset.ddpm.evaluation.batch_size=256 \
+                        dataset.ddpm.evaluation.save_path=\'/nlp_data/kdy/genai/DiffuseVAE/image_recons/ddpm_e2e_kd_cifar10/\' \
+                        dataset.ddpm.evaluation.z_cond=False \
+                        dataset.ddpm.evaluation.n_samples=1000 \
+                        dataset.ddpm.evaluation.n_steps=1000 \
+                        dataset.ddpm.evaluation.save_vae=True \
+                        dataset.ddpm.evaluation.workers=8 \
+                        dataset.vae.evaluation.chkpt_path=\'/nlp_data/kdy/genai/DiffuseVAE/main/results/diffusevae_e2e_kd_cifar10/vae-epoch=499.ckpt\'
